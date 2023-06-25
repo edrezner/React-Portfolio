@@ -1,39 +1,28 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import AboutMe from "./pages/AboutMe";
-import Project from "../components/Project";
-import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+import React, { useEffect } from "react";
+// import { Link } from "react-router-dom";
 
-const Navigation = () => {
-  const [selectedSection, setSelectedSection] = useState("AboutMe");
-
-  const handleSectionChange = (section) => {
-    setSelectedSection(section);
-  };
-
+const Navigation = ({ setSelectedSection }) => {
+  useEffect(() => {
+    console.log({ setSelectedSection });
+  }, []);
   return (
     <>
       <nav>
         <ul>
-          <li onClick={() => handleSectionChange("AboutMe")}>
-            <Link to="/">About Me</Link>
+          <li onClick={() => setSelectedSection("AboutMe")}>
+            <a href="#">About Me</a>
           </li>
-          <li onClick={() => handleSectionChange("Portfolio")}>
-            <Link to="/portfolio">Portfolio</Link>
+          <li onClick={() => setSelectedSection("Portfolio")}>
+            <a href="#">Portfolio</a>
           </li>
-          <li onClick={() => handleSectionChange("Contact")}>
-            <Link to="/contact">Contact</Link>
+          <li onClick={() => setSelectedSection("Contact")}>
+            <a href="#">Contact</a>
           </li>
-          <li onClick={() => handleSectionChange("Resume")}>
-            <Link to="/resume">Resume</Link>
+          <li onClick={() => setSelectedSection("Resume")}>
+            <a href="#">Resume</a>
           </li>
         </ul>
       </nav>
-      {selectedSection === "AboutMe" && <AboutMe />}
-      {selectedSection === "Portfolio" && <Project />}
-      {selectedSection === "Contact" && <Contact />}
-      {selectedSection === "Resume" && <Resume />}
     </>
   );
 };
