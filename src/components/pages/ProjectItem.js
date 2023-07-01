@@ -1,12 +1,23 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import "../../assets/styles.css";
 
 const ProjectItem = ({ project }) => {
+  const { link, name, image, git } = project;
+
   return (
     <div className="project-item">
-      <a href={`/projects/${project.id}`}>
-        <img src={project.image} alt={project.name} />
-        <div className="project-name"></div>
+      <a href={link} target="_blank">
+        <img src={image} alt={name} className="project-image" />
+        <div className="project-title">{name}</div>
+        <div className="github-icon">
+          <a href={git} target="_blank">
+            <img
+              src="../assets/images/git.jpg"
+              alt="GitHub"
+              className="github-icon"
+            />
+          </a>
+        </div>
       </a>
     </div>
   );
