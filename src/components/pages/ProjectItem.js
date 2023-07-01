@@ -6,7 +6,7 @@ const ProjectItem = ({ project }) => {
     <div className="project-item">
       <a href={`/projects/${project.id}`}>
         <img src={project.image} alt={project.name} />
-        <div className="project-name">{project.name}</div>
+        <div className="project-name"></div>
       </a>
     </div>
   );

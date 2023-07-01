@@ -1,10 +1,13 @@
 import React from "react";
 import ProjectItem from "./pages/ProjectItem";
-//import CodeQuiz from "../assets/images/cqpg1.png";
 
 const projects = [
   { id: 1, name: "Code Quiz", image: "assets/images/cqpg1.png" },
-  { id: 2, name: "Weather Dashboard", image: "" },
+  { id: 2, name: "Weather Dashboard", image: "assets/images/weather.png" },
+  { id: 3, name: "Scheduler", image: "assets/images/workdayschedule.png" },
+  { id: 4, name: "FCC Manager", image: "assets/images/FCCManager.png" },
+  { id: 5, name: "E-Commerce Back End", image: "assets/images/JavaScript.png" },
+  { id: 6, name: "Social Network API", image: "assets/images/social.png" },
 ];
 
 const Portfolio = () => {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 /* Body page */
 import AboutMe from "./components/pages/AboutMe";
@@ -22,6 +23,7 @@ const App = () => {
       {selectedSection === "Portfolio" && <Project />}
       {selectedSection === "Contact" && <Contact />}
       {selectedSection === "Resume" && <Resume />}
+      <Footer></Footer>
     </>
   );
 };
