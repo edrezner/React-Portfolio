@@ -18,10 +18,12 @@ const App = () => {
   return (
     <>
       <Header setSelectedSection={setSelectedSection}></Header>
-      {selectedSection === "AboutMe" && <AboutMe />}
-      {selectedSection === "Portfolio" && <Project />}
-      {selectedSection === "Contact" && <Contact />}
-      {selectedSection === "Resume" && <Resume />}
+      <main style={{ padding: "10px" }}>
+        {selectedSection === "AboutMe" && <AboutMe />}
+        {selectedSection === "Portfolio" && <Project />}
+        {selectedSection === "Contact" && <Contact />}
+        {selectedSection === "Resume" && <Resume />}
+      </main>
       <Footer></Footer>
     </>
   );

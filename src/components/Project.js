@@ -27,7 +27,7 @@ const projects = [
     id: 4,
     link: "https://manager-fc.herokuapp.com/",
     name: "FC Manager",
-    image: "assets/images/FCManager.png",
+    image: "assets/images/FCCManager.png",
     git: "https://github.com/ZeeDabbagh/manager-fc",
   },
   {

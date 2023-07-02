@@ -1,0 +1,97 @@
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.header-left {
+  font-size: 200%;
+  font-weight: bolder;
+  width: 100%;
+}
+.header-right {
+  max-width: 330px;
+  min-width: 330px;
+}
+.header-right ul {
+  margin: 0;
+  list-style: none;
+}
+.header-right li {
+  display: inline-block;
+  margin-right: 20px;
+  transition: all 300ms ease-in-out;
+}
+.header-right li:last-child {
+  margin-right: 0;
+}
+.header-right li:hover {
+  transform: scale(120%);
+}
+.header-right a {
+  text-decoration: none;
+  color: black;
+  transition: all 300ms ease-in-out;
+}
+.header-right a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+@media screen and (max-width: 528px) {
+  header {
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  .header-right {
+    margin-top: 20px;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .header-right ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding-left: 0;
+    align-content: center;
+    align-items: center;
+  }
+  .header-right li {
+    margin: 10px;
+    border: 1px solid black;
+    width: 75%;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+  }
+
+  .header-right li:hover {
+    transform: unset;
+    background-image: linear-gradient(
+      to right,
+      rgba(80, 80, 80, 0.75),
+      rgba(0, 0, 40, 0.35)
+    );
+  }
+  .header-right li:last-child {
+    margin-right: 10px;
+  }
+}
+
+/* import React from "react";
+import Navigation from "./Navigation";
+import "./Header.css";
+
+const Header = ({ setSelectedSection }) => {
+  return (
+    <header>
+      <div className="header-left">Eric Drezner</div>
+      <div className="header-right">
+        <Navigation setSelectedSection={setSelectedSection} />
+      </div>
+    </header>
+  );
+};
+
+export default Header;
+ */

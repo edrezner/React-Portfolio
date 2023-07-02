@@ -10,31 +10,42 @@ function Form() {
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
+    console.log("hic");
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
+    console.log({ inputType, inputValue });
+    // console.log({ nameBoolean: !Boolean(name.length) });
+
     if (inputType === "email") {
+      if (!validateEmail(inputValue)) {
+        setErrorMessage("email is invalid.");
+      } else {
+        setErrorMessage("");
+      }
       setEmail(inputValue);
     } else if (inputType === "name") {
+      if (inputValue.length > 0) {
+        setErrorMessage("name is required.");
+      } else {
+        setErrorMessage("");
+      }
       setName(inputValue);
-    } else {
+    } else if (inputType === "message") {
+      if (inputValue.length > 0) {
+        setErrorMessage("message is required.");
+      } else {
+        setErrorMessage("");
+      }
       setMessage(inputValue);
+    } else {
+      // In case add more fields in the future
     }
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    if (!validateEmail(email)) {
-      setErrorMessage("email is invalid.");
-      return;
-    }
-    setEmail("");
-
-    if (!message) {
-      setErrorMessage("message is required.");
-    }
   };
 
   return (
@@ -42,28 +53,20 @@ function Form() {
       <h1>Contact</h1>
       <form className="form">
         <p>Name:</p>
-        <input value={name} name="name" type="text" />
+        <input name="name" type="text" onBlur={handleInputChange} />
         <p>Email Address:</p>
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-        />
+        <input name="email" onBlur={handleInputChange} type="email" />
         <p>Message:</p>
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-        />
+        <textarea name="message" onBlur={handleInputChange} type="text" />
         <button type="button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
       {errorMessage && (
         <div>
-          <p className="error-text">{errorMessage}</p>
+          <p className="error-text" style={{ color: "red" }}>
+            {errorMessage}
+          </p>
         </div>
       )}
     </div>

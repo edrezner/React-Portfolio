@@ -1,7 +1,43 @@
-.project-item {
-  position: relative;
+.project-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
 }
 
+.project-item {
+  position: relative;
+  border: 2px solid black;
+  filter: grayscale(100%);
+}
+.project-item:hover {
+  position: relative;
+  border: 2px solid black;
+  filter: grayscale(0);
+}
+
+.project-image {
+  z-index: 5;
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  object-fit: contain;
+}
+
+.project-overlay {
+  background-color: black;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in;
+}
+.project-overlay:hover {
+  opacity: 50%;
+}
 .project-title {
   position: absolute;
   top: 50%;
@@ -13,7 +49,8 @@
   font-weight: bold;
   font-size: 16px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease-in;
+  z-index: 10;
 }
 
 .project-item:hover .project-title {
@@ -26,7 +63,10 @@
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease-in;
+  z-index: 15;
+  width: 5ch;
+  height: auto;
 }
 
 .project-item:hover .github-icon {
