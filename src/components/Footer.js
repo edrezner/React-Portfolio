@@ -1,10 +1,15 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <a href="https://github.com/edrezner" target="_blank">
-        <img src="../assets/images/git.png" alt="GitHub" />
+        <img
+          className="footer-img"
+          src="../assets/images/git.png"
+          alt="GitHub"
+        />
       </a>
     </div>
   );

@@ -1,3 +1,23 @@
+main {
+  background-color: #052f5f;
+  color: #eee5e9;
+  min-height: 80vh;
+  display: flex;
+}
+
+a {
+  color: #82ddf0;
+  text-decoration: none;
+}
+
+.page-div {
+  width: 100%;
+}
+
+.page-h1 {
+  text-align: center;
+}
+
 .project-list {
   display: flex;
   flex-flow: row wrap;
@@ -7,21 +27,27 @@
 
 .project-item {
   position: relative;
-  border: 2px solid black;
   filter: grayscale(100%);
+  margin: 20px;
 }
 .project-item:hover {
   position: relative;
-  border: 2px solid black;
   filter: grayscale(0);
 }
 
 .project-image {
   z-index: 5;
   position: relative;
-  width: 40vw;
-  height: 40vw;
-  object-fit: contain;
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px black;
+  transition: box-shadow 0.5s ease-in;
+}
+
+.project-image:hover {
+  box-shadow: 10px 10px 10px #82ddf0;
 }
 
 .project-overlay {
@@ -44,10 +70,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  border-radius: 30px;
+  color: #82ddf0;
   padding: 8px 16px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 26px;
   opacity: 0;
   transition: opacity 0.5s ease-in;
   z-index: 10;

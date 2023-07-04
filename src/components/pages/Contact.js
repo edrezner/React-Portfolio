@@ -26,14 +26,14 @@ function Form() {
       }
       setEmail(inputValue);
     } else if (inputType === "name") {
-      if (inputValue.length > 0) {
+      if (!inputValue.length) {
         setErrorMessage("name is required.");
       } else {
         setErrorMessage("");
       }
       setName(inputValue);
     } else if (inputType === "message") {
-      if (inputValue.length > 0) {
+      if (!inputValue.length) {
         setErrorMessage("message is required.");
       } else {
         setErrorMessage("");
@@ -49,8 +49,8 @@ function Form() {
   };
 
   return (
-    <div>
-      <h1>Contact</h1>
+    <div className="page-div">
+      <h1 className="page-h1">Contact</h1>
       <form className="form">
         <p>Name:</p>
         <input name="name" type="text" onBlur={handleInputChange} />

@@ -27,29 +27,29 @@ const projects = [
     id: 4,
     link: "https://manager-fc.herokuapp.com/",
     name: "FC Manager",
-    image: "assets/images/FCCManager.png",
+    image: "assets/images/FCManager.png",
     git: "https://github.com/ZeeDabbagh/manager-fc",
   },
   {
     id: 5,
-    link: "",
-    name: "E-Commerce Back End",
-    image: "assets/images/JavaScript.png",
-    git: "https://github.com/edrezner/E-Commerce-Back-End",
+    link: "https://pvlln.github.io/project1-group-awesome/",
+    name: "Movie Search Engine",
+    image: "assets/images/mse.png",
+    git: "https://github.com/pvlln/project1-group-awesome",
   },
   {
     id: 6,
-    link: "",
-    name: "Social Network API",
-    image: "assets/images/social1.png",
-    git: "https://github.com/edrezner/Social-Network-API",
+    link: "https://salty-ravine-50225.herokuapp.com/",
+    name: "Note Taker",
+    image: "assets/images/note.png",
+    git: "https://github.com/edrezner/Note-Taker",
   },
 ];
 
 const Portfolio = () => {
   return (
     <div>
-      <h1>Portfolio</h1>
+      <h1 className="page-h1">Portfolio</h1>
       <div className="project-list">
         {projects.map((project) => (
           <ProjectItem key={project.id} project={project} />

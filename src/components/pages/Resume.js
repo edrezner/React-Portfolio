@@ -3,10 +3,10 @@ import resume from "../../assets/resume.txt";
 
 const Resume = () => {
   return (
-    <div>
-      <h1>Resume</h1>
+    <div className="page-div">
+      <h1 className="page-h1">Resume</h1>
 
-      <p>
+      <p className="page-p">
         Download my <a href={resume}>resume</a>
       </p>
       <ul>
