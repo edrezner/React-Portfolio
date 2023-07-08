@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProjectItem.css";
+import gitIcon from "../../assets/images/git.png";
 
 const ProjectItem = ({ project }) => {
   const { link, name, image, git } = project;
@@ -14,7 +15,7 @@ const ProjectItem = ({ project }) => {
             <img
               src="../assets/images/git.png"
               alt="GitHub"
-              className="github-icon"
+              className={gitIcon}
             />
           </a>
         </div>
