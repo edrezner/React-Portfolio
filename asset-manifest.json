@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.6f3827f6.css",
-    "main.js": "/React-Portfolio/static/js/main.49f70f96.js",
+    "main.js": "/React-Portfolio/static/js/main.a328fe3c.js",
     "static/media/suit.png": "/React-Portfolio/static/media/suit.987fccf7f5f96f8a76cf.png",
     "static/media/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.png": "/React-Portfolio/static/media/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.b77471ccdabdd001b0ed.png",
     "static/media/git.png": "/React-Portfolio/static/media/git.553c66159c5672f25df6.png",
     "index.html": "/React-Portfolio/index.html",
     "static/media/resume.txt": "/React-Portfolio/static/media/resume.ea559874da6e1b285324.txt",
     "main.6f3827f6.css.map": "/React-Portfolio/static/css/main.6f3827f6.css.map",
-    "main.49f70f96.js.map": "/React-Portfolio/static/js/main.49f70f96.js.map"
+    "main.a328fe3c.js.map": "/React-Portfolio/static/js/main.a328fe3c.js.map"
   },
   "entrypoints": [
     "static/css/main.6f3827f6.css",
-    "static/js/main.49f70f96.js"
+    "static/js/main.a328fe3c.js"
   ]
 }
