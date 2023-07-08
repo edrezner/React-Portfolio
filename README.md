@@ -6,9 +6,9 @@ This app serves as a portfolio for some of my completed projects created with Re
 
 The layout contains an About Me (landing page), Portfolio with links to the deployed applications and corresponding repos, a Contact page, and a Resume/Skills page.
 
-Repo and Preview Image:
+Website and Preview Image:
 
-[GitHub Repo](https://github.com/edrezner/React-Portfolio)
+[Website](https://edrezner.github.io/React-Portfolio/)
 
 ![Preview Iamge](./public/assets/images/preview.png)
 
