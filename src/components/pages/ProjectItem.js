@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/styles.css";
+import "./ProjectItem.css";
 
 const ProjectItem = ({ project }) => {
   const { link, name, image, git } = project;

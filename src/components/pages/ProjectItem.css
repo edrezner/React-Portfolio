@@ -3,11 +3,16 @@ main {
   color: #eee5e9;
   min-height: 80vh;
   display: flex;
+  justify-content: center;
 }
 
 a {
   color: #82ddf0;
   text-decoration: none;
+}
+
+ul {
+  font-weight: bold;
 }
 
 .page-div {
@@ -16,6 +21,10 @@ a {
 
 .page-h1 {
   text-align: center;
+}
+
+.page-p {
+  font-size: large;
 }
 
 .project-list {

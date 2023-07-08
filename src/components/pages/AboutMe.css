@@ -1,0 +1,23 @@
+.profPic-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profPic {
+  width: 15vw;
+  height: 15vw;
+  object-fit: contain;
+  border-radius: 200px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-p {
+  text-align: center;
+  width: 50%;
+  padding-top: 20px;
+}

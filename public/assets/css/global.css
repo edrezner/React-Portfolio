@@ -8,3 +8,32 @@ body {
 .clearfix {
   clear: both;
 }
+
+main {
+  background-color: #052f5f;
+  color: #eee5e9;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: #82ddf0;
+  text-decoration: none;
+}
+
+ul {
+  font-weight: bold;
+}
+
+.page-div {
+  width: 100%;
+}
+
+.page-h1 {
+  text-align: center;
+}
+
+.page-p {
+  font-size: large;
+}

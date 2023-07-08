@@ -3,8 +3,9 @@
   justify-content: center;
   align-items: center;
   background-color: #052f5f;
+  padding-right: 10px;
 }
 .footer-img {
-  width: 2vw;
-  height: 2vw;
+  width: 3vw;
+  height: 3vw;
 }

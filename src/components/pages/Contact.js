@@ -46,6 +46,9 @@ function Form() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    document.getElementsByName("name")[0].value = "";
+    document.getElementsByName("email")[0].value = "";
+    document.getElementsByName("message")[0].value = "";
   };
 
   return (
@@ -57,14 +60,23 @@ function Form() {
         <p>Email Address:</p>
         <input name="email" onBlur={handleInputChange} type="email" />
         <p>Message:</p>
-        <textarea name="message" onBlur={handleInputChange} type="text" />
-        <button type="button" onClick={handleFormSubmit}>
+        <textarea
+          name="message"
+          style={{ height: "5vw", width: "20vw" }}
+          onBlur={handleInputChange}
+          type="text"
+        />
+        <button
+          type="button"
+          style={{ display: "block" }}
+          onClick={handleFormSubmit}
+        >
           Submit
         </button>
       </form>
       {errorMessage && (
         <div>
-          <p className="error-text" style={{ color: "red" }}>
+          <p className="error-text" style={{ color: "#82ddf0" }}>
             {errorMessage}
           </p>
         </div>
