@@ -12,11 +12,7 @@ const ProjectItem = ({ project }) => {
         <div className="project-title">{name}</div>
         <div className="github-icon">
           <a href={git} target="_blank">
-            <img
-              src="../assets/images/git.png"
-              alt="GitHub"
-              className={gitIcon}
-            />
+            <img src={gitIcon} alt="GitHub" className="github-icon" />
           </a>
         </div>
       </a>
