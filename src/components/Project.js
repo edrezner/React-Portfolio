@@ -18,17 +18,17 @@ const projects = [
   },
   {
     id: 3,
-    link: "https://edrezner.github.io/Work-Day-Scheduler/",
-    name: "Scheduler",
-    image: "assets/images/workdayschedule.png",
-    git: "https://github.com/edrezner/Work-Day-Scheduler",
+    link: "https://crowd-craft-2db11e3debb4.herokuapp.com/",
+    name: "CrowdCraft",
+    image: "assets/images/crowdcraft.png",
+    git: "https://github.com/edrezner/crowdfund-app",
   },
   {
     id: 4,
-    link: "https://manager-fc.herokuapp.com/",
+    link: "https://manager-fc-a7115e681431.herokuapp.com/",
     name: "FC Manager",
     image: "assets/images/FCManager.png",
-    git: "https://github.com/ZeeDabbagh/manager-fc",
+    git: "https://github.com/edrezner/team-manager-app",
   },
   {
     id: 5,

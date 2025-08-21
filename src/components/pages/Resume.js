@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/resume.txt";
+import resume from "../../assets/ResumeUpdated.md";
 
 const Resume = () => {
   return (

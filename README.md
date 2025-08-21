@@ -10,7 +10,7 @@ Website and Preview Image:
 
 [Website](https://edrezner.github.io/React-Portfolio/)
 
-![Preview Iamge](./public/assets/images/preview.png)
+![Preview Iamge](./Assets/Images/preview.png)
 
 ## Usage
 
